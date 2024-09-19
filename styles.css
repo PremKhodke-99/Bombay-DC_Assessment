@@ -36,14 +36,190 @@
 
 body,
 html {
-    height: 100vh;
-    width: 100vw;
     overflow-x: hidden;
     font-family: "museo100";
 }
 
 /* Mobile */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+
+    nav{
+        margin: 0 20px;
+        padding: 20px 0;
+        border-bottom: 1px solid #F0F0F0;
+        display: flex;
+        justify-content: space-between;
+        background: transparent;
+    }
+
+    nav .logo, footer .logo{
+        width: 88px;
+        height: 35px;
+        color: #3C3C3C;
+        background: #E4E4E4;
+        letter-spacing: 0.26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    nav img{
+        display: block;
+        position: relative;
+        right: 20px;
+    }
+
+    .contact .left{
+        display: none;
+    }
+
+    .contact .right{
+        margin: 50px 20px;
+        padding: 0 20px 0 0;
+    }
+
+    .contact .right img{
+        z-index: -1;
+        position: absolute;
+        right: -290px;
+        top: 0;
+        height: 541px;
+        width: 664px;
+    }
+
+    .contact .right #point{
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        top: 350px;
+        right: 150px;
+    }
+
+    .contact .right #info{
+        display: none;
+    }
+
+    
+    .contact .right h1{
+        font-size: 24px;
+    }
+
+    .contact .right .contact-details{
+        height: 50px;
+        width: 270px;
+        color: #8E8E8E;
+        margin-top: 40.02px;
+        margin-bottom: 258.98px;
+    }
+
+    .contact .right button{
+        display: block;
+        width: 100%;
+        height: 45px;
+        font-size: 12px;
+        background: #3971B1;
+        border: none;
+        color: white;
+        font-family: "museo100";
+        margin-bottom: 70px;
+    }
+
+    .contact .right h2{
+        color: #3971B1;
+    }
+
+    .contact .right .dets{
+        display: none;
+    }
+    .contact .right .dets2{
+        margin-bottom: 50px;
+    }
+    .contact .right .dets2 div{
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 0;
+        border-bottom: 1px solid #E4E4E4;
+        color: #8E8E8E;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        height: 100vh;
+        width: 100vw;
+        background: #F4F4F4;
+        padding: 45px 20px 50px 20px;
+    }
+
+    .mobile .top{
+        padding-bottom: 50px;
+        border-bottom: 1px solid #E4E4E4;
+    }
+
+    .mobile .top h3{
+        font-size: 18px;
+        margin-bottom: 27.98px;
+    }
+
+    .mobile .top input{
+        display: block;
+        width: 100%;
+        height: 40px;
+        padding: 12px;
+        border: none;
+    }
+
+    .mobile .top button{
+        width: 100%;
+        height: 40px;
+        font-size: 12px;
+        color: white;
+        border: none;
+        margin-top: 30px;
+        margin-bottom: 47.02px;
+        background: #3971B1;
+    }
+
+    .mobile .top .flexbox{
+        display: flex;
+        gap: 41px;
+        margin-bottom: 60px;
+    }
+
+    .mobile .top .flexbox div{
+        height: 138px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .mobile .top .logoflex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile .bottom{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 144px;
+    }
+
+    .mobile .bottom p{
+        text-align: center;
+        color: #818181;
+    }
+}
 
 /* Tablets */
 @media only screen and (min-width: 600px) {
@@ -67,6 +243,10 @@ html {
         align-items: center;
         padding-top: 15px;
         padding-bottom: 15px;
+    }
+
+    nav img{
+        display: none;
     }
     
     nav ul{
@@ -183,7 +363,11 @@ html {
         font-family: Helvetica, sans-serif;
         font-size: 13px;
     }
-    
+
+    .contact .right button{
+        display: none;
+    }
+
     .contact .right h2{
         font-size: 22px;
         color: #3971B1;
@@ -201,7 +385,14 @@ html {
         font-size: 13px;
     }
     
-    
+    .contact .right .dets2{
+        display: none;
+    }
+
+    .mobile{
+        display: none;
+    }
+
     footer {
         margin-top: 40px;
         padding: 51px 100px 0 100px;
@@ -454,7 +645,7 @@ html {
 
 
     footer {
-        margin-top: 120px;
+        margin-top: 60px;
         padding: 51px 100px 0 100px;
         background: #F4F4F4;
     }
