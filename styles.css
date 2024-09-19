@@ -89,6 +89,9 @@ html {
         top: 13.4px;
         right: 14.02px;
         color: #3971B1;
+        height: 20px;
+        width: 20px;
+        background: #3971B1;
     }
 
     .form form{
