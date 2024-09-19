@@ -8,22 +8,27 @@
     font-family: "museo100";
     src: url("/fonts/Museo_Slab_100.otf");
 }
+
 @font-face {
     font-family: "museo300";
     src: url("/fonts/Museo_Slab_300.otf");
 }
+
 @font-face {
     font-family: "museo500";
     src: url("/fonts/Museo_Slab_500.otf");
 }
+
 @font-face {
     font-family: "museo700";
     src: url("/fonts/Museo_Slab_700.otf");
 }
+
 @font-face {
     font-family: "museo900";
     src: url("/fonts/Museo_Slab_900.otf");
 }
+
 @font-face {
     font-family: "museo1000";
     src: url("/fonts/Museo_Slab_1000.otf");
@@ -37,172 +42,512 @@ html {
     font-family: "museo100";
 }
 
-nav {
-    margin: 0 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    font-size: 13px;
-    background: transparent;
-    border-bottom: 1px solid #F0F0F0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
-nav ul{
-    list-style: none;
-    display: flex;
-    gap: 50px;
-    text-transform: uppercase;
-}
-
-nav ul li{
-    cursor: pointer;
-    font-family: "museo500";
-    color: #3C3C3C;
-}
-
-nav .logo{
-    width: 88px;
-    height: 35px;
-    color: #3C3C3C;
-    background: #E4E4E4;
-    letter-spacing: 0.26px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer
-}
-
-.contact{
-    width: 100%;
-    display: flex;
-}
-
-.contact .left{
-    margin-top: 165px;
-    margin-left: 100px;
-    margin-bottom: 120px;
-    padding-right: 100px;
-    width: 50%;
-    border-right: 1px solid #F0F0F0;
-}
-
-.contact .left h1{
-    font-family: "museo300";
-}
-
-.contact .left h2{
-    font-size: 26px;
-    color: #3971B1;
-}
-
-.contact .left h3{
-    margin-top: 70px;
-    margin-bottom: 100px;
-    font-size: 22px;
-    color: #646464;
-}
-
-.contact .left form{
-    display: flex;
-    flex-direction: column;
-}
-
-.contact .right{
-    margin-right: 100px;
-    padding-left: 100px;
-    width: 50%;
-}
-
-.contact .right img{
-    z-index: -1;
-    position: absolute;
-    right: -100px;
-    height: 683px;
-    width: 838px;
-}
-
-.contact .right #point{
-    height: 60px;
-    width: 60px;
-    position: absolute;
-    top: 414.98px;
-    right: 415.02px;
-}
-
-.contact .right #info{
-    font-size: 12px;
-    margin-top: 100px;
-    text-align: right;
-    color: #AFAFAF;
-}
-
-.contact .right h1{
-    font-size: 28px;
-    /* font-family: "museo300"; */
-    color: #383838;
-    margin-top: 629px;
-}
-
-.contact .right .contact-details{
-    margin-top: 50.02px;
-    margin-bottom: 49.98px;
-    color: #8E8E8E; 
-    font-family: Helvetica, sans-serif;
-}
-
-.contact .right h2{
-    font-size: 26px;
-    color: #3971B1;
-}
-
-.contact .right .dets{
-    height: 51px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    color: #8E8E8E;
-    font-family: Helvetica, sans-serif;
-}
-
-
-footer {
-    margin-top: 120px;
-    padding: 51px 100px 0 100px;
-    background: #F4F4F4;
-}
-
-footer .copyright{
-    padding: 22.9px 0;
-    border-top: 1px solid #E4E4E4;
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    font-family: Helvetica, sans-serif;
-    color: #818181;
-}
-
-footer .copyright img{
-    height: 18px;
-    width: 168px;
-}
 /* Mobile */
 @media only screen and (max-width: 600px) {}
 
 /* Tablets */
 @media only screen and (min-width: 600px) {
-    .copyright {
+
+    body{
+        height: max-content;
+    }
+
+    nav {
+        margin: 0 50px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        font-size: 13px;
+        background: transparent;
+        border-bottom: 1px solid #F0F0F0;
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    nav ul{
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        text-transform: uppercase;
+    }
+    
+    nav ul li{
+        cursor: pointer;
+        font-family: "museo500";
+        color: #3C3C3C;
+    }
+    
+    nav .logo{
+        width: 88px;
+        height: 35px;
+        color: #3C3C3C;
+        background: #E4E4E4;
+        letter-spacing: 0.26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer
+    }
+    
+    .contact{
+        width: 100%;
+        display: flex;
+    }
+    
+    .contact .left{
+        margin-top: 100px;
+        margin-left: 50px;
+        margin-bottom: 120px;
+        padding-right: 50px;
+        width: 50%;
+        border-right: 1px solid #F0F0F0;
+    }
+    
+    .contact .left h1{
+        font-family: "museo300";
+    }
+    
+    .contact .left h2{
+        font-size: 26px;
+        color: #3971B1;
+    }
+    
+    .contact .left h3{
+        margin-top: 40px;
+        margin-bottom: 70px;
+        font-size: 22px;
+        color: #646464;
+    }
+    
+    .contact .left form{
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+    }
+    
+    .contact .left form input, .contact .left form select{
+        padding: 20px 30px;
+        border: none;
+        border-bottom: 1px solid #E4E4E4;
+    }
+    
+    .contact .left form select {
+        border: none;
+        line-height: 40px;
+    }
+    
+    .contact .right{
+        margin-right: 50px;
+        padding-left: 50px;
+        width: 50%;
+    }
+    
+    .contact .right img{
+        z-index: -1;
+        position: absolute;
+        right: -100px;
+        height: 400px;
+        width: 500px;
+    }
+    
+    .contact .right #point{
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        top: 250px;
+        right: 210px;
+    }
+    
+    .contact .right #info{
+        font-size: 12px;
+        margin-top: 100px;
+        text-align: right;
+        color: #AFAFAF;
+    }
+    
+    .contact .right h1{
+        font-size: 18px;
+        color: #383838;
+        margin-top: 300px;
+    }
+    
+    .contact .right .contact-details{
+        margin-top: 25px;
+        margin-bottom: 25px;
+        color: #8E8E8E; 
+        font-family: Helvetica, sans-serif;
+        font-size: 13px;
+    }
+    
+    .contact .right h2{
+        font-size: 22px;
+        color: #3971B1;
+    }
+    
+    .contact .right .dets{
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        color: #8E8E8E;
+        font-family: Helvetica, sans-serif;
+        font-size: 13px;
+    }
+    
+    
+    footer {
+        margin-top: 40px;
+        padding: 51px 100px 0 100px;
+        background: #F4F4F4;
+    }
+    
+    footer .copyright{
+        padding: 16px 0;
+        border-top: 1px solid #E4E4E4;
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        font-family: Helvetica, sans-serif;
+        color: #818181;
+    }
+    
+    footer .copyright img{
+        height: 12px;
+        width: 140px;
+    }
+    
+    footer .navigate{
+        display: flex;
+        position: relative;
+    }
+    
+    footer .navigate .logo{
+        height: 30px;
+        width: 88px;
+        font-size: 13px;
+        color: #3C3C3C;
+        background: #E4E4E4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 90px;
+    }
+    
+    footer .navigate .links{
+        height: 245px;
+        width: 134px;
+        font-size: 14px;
+        color: #383838;
+        margin-right: 90px;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    
+    footer .navigate .links p{
+        cursor: pointer;
+    }
+    
+    footer .navigate .news h3{
+        font-size: 18px;
+        color: #818181;
+        margin-bottom: 19.98px;
+    }
+    
+    footer .navigate .news input{
+        display: block;
+        width: 230px;
+        height: 36px;
+        padding: 12px;
+        border: none;
+        margin-bottom: 20px;
+    }
+    
+    footer .navigate .news button{
+        width: 100px;
+        height: 36px;
+        font-size: 12px;
+        color: white;
+        background: #3971B1;
+        border: none;
+        cursor: pointer;
+        font-family: "museo100";
+    }
+    
+    footer .navigate .topbtn{
+        position: absolute;
+        right: 0;
+        bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+        gap: 8px;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+    }
+    footer .navigate .topbtn img{
+        height: 35px;
+        width: 35px;
     }
 }
 
 /* Desktop */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    nav {
+        margin: 0 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        font-size: 13px;
+        background: transparent;
+        border-bottom: 1px solid #F0F0F0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 50px;
+        text-transform: uppercase;
+    }
+
+    nav ul li {
+        cursor: pointer;
+        font-family: "museo500";
+        color: #3C3C3C;
+    }
+
+    nav .logo {
+        width: 88px;
+        height: 35px;
+        color: #3C3C3C;
+        background: #E4E4E4;
+        letter-spacing: 0.26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer
+    }
+
+    .contact {
+        width: 100%;
+        display: flex;
+    }
+
+    .contact .left {
+        margin-top: 165px;
+        margin-left: 100px;
+        margin-bottom: 120px;
+        padding-right: 100px;
+        width: 50%;
+        border-right: 1px solid #F0F0F0;
+    }
+
+    .contact .left h1 {
+        font-family: "museo300";
+    }
+
+    .contact .left h2 {
+        font-size: 26px;
+        color: #3971B1;
+    }
+
+    .contact .left h3 {
+        margin-top: 70px;
+        margin-bottom: 100px;
+        font-size: 22px;
+        color: #646464;
+    }
+
+    .contact .left form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+    }
+
+    .contact .left form input,
+    .contact .left form select {
+        padding: 20px 30px;
+        border: none;
+        border-bottom: 1px solid #E4E4E4;
+    }
+
+    .contact .left form select {
+        border: none;
+        line-height: 40px;
+    }
+
+    .contact .right {
+        margin-right: 100px;
+        padding-left: 100px;
+        width: 50%;
+    }
+
+    .contact .right img {
+        z-index: -1;
+        position: absolute;
+        right: -100px;
+        height: 683px;
+        width: 838px;
+    }
+
+    .contact .right #point {
+        height: 60px;
+        width: 60px;
+        position: absolute;
+        top: 414.98px;
+        right: 415.02px;
+    }
+
+    .contact .right #info {
+        font-size: 12px;
+        margin-top: 100px;
+        text-align: right;
+        color: #AFAFAF;
+    }
+
+    .contact .right h1 {
+        font-size: 28px;
+        /* font-family: "museo300"; */
+        color: #383838;
+        margin-top: 629px;
+    }
+
+    .contact .right .contact-details {
+        margin-top: 50.02px;
+        margin-bottom: 49.98px;
+        color: #8E8E8E;
+        font-family: Helvetica, sans-serif;
+    }
+
+    .contact .right h2 {
+        font-size: 26px;
+        color: #3971B1;
+    }
+
+    .contact .right .dets {
+        height: 51px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        color: #8E8E8E;
+        font-family: Helvetica, sans-serif;
+    }
+
+
+    footer {
+        margin-top: 120px;
+        padding: 51px 100px 0 100px;
+        background: #F4F4F4;
+    }
+
+    footer .copyright {
+        padding: 22.9px 0;
+        border-top: 1px solid #E4E4E4;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        font-family: Helvetica, sans-serif;
+        color: #818181;
+    }
+
+    footer .copyright img {
+        height: 18px;
+        width: 168px;
+    }
+
+    footer .navigate {
+        display: flex;
+        position: relative;
+    }
+
+    footer .navigate .logo {
+        height: 35px;
+        width: 88px;
+        font-size: 13px;
+        color: #3C3C3C;
+        background: #E4E4E4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 260px;
+    }
+
+    footer .navigate .links {
+        height: 245px;
+        width: 134px;
+        font-size: 14px;
+        color: #383838;
+        margin-right: 190px;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+
+    footer .navigate .links p {
+        cursor: pointer;
+    }
+
+    footer .navigate .news h3 {
+        font-size: 18px;
+        color: #818181;
+        margin-bottom: 19.98px;
+    }
+
+    footer .navigate .news input {
+        display: block;
+        width: 272px;
+        height: 40px;
+        padding: 12px;
+        border: none;
+        margin-bottom: 20px;
+    }
+
+    footer .navigate .news button {
+        width: 130px;
+        height: 40px;
+        font-size: 12px;
+        color: white;
+        background: #3971B1;
+        border: none;
+        cursor: pointer;
+        font-family: "museo100";
+    }
+
+    footer .navigate .topbtn {
+        position: absolute;
+        right: 0;
+        bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+    }
+
+    footer .navigate .topbtn img {
+        height: 45px;
+        width: 45px;
+    }
+}
