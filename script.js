@@ -15,3 +15,9 @@ closebtn.addEventListener("click", () => {
     contact.style.display = "block";
     footer.style.display = "block";
 })
+
+var scrollToTop = document.querySelector("#scrolltop");
+
+scrollToTop.addEventListener("click", () => {
+    globalThis.scrollTo({top: 0, left: 0, behavior: "smooth"});
+})
